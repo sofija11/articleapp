@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+
+
 class Clanak extends Model
 {
     use HasFactory;
@@ -18,4 +20,6 @@ class Clanak extends Model
         return $this->belongsTo(Korisnik::class);
 
     }
+
+
 }

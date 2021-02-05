@@ -21,3 +21,5 @@ Route::post('/login',"KorisnikController@login");
 Route::get('/logout',"KorisnikController@logout");
 
 Route::resource('clanak','ClanakController');
+
+Route::get('/exportuj','CSVController@exportData');

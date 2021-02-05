@@ -10,7 +10,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
-                    <h1 id="clanci"> CLANCI </h1> <span>  <input type="submit" id="izvoz"  name="izvoz"  class="btn btn-primary" value="CSV"></span>
+                    <h1 id="clanci"> CLANCI </h1> <span>   <a class="btn btn-primary" href="{{ url("/exportuj") }}">EXPORT CSV</a></span>
                     @foreach ($clanci as $clanak)
                         <h2 class="">{{ $clanak->naslov}}</h2>
                         <p>{{ $clanak->tekst}}</p>
